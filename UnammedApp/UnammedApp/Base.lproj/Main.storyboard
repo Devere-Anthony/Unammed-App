@@ -11,15 +11,19 @@
         <!--Start Session-->
         <scene sceneID="k7X-US-ooP">
             <objects>
-                <viewController title="Start Session" id="zJh-mA-v2Q" sceneMemberID="viewController">
+                <viewController title="Start Session" id="zJh-mA-v2Q" customClass="StartViewController" customModule="UnammedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CVJ-mf-BdE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apm-pf-VZ4">
-                                <rect key="frame" x="165.66666666666666" y="408.66666666666669" width="62" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <rect key="frame" x="163.66666666666666" y="407" width="65.666666666666657" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="4Oi-b3-VUj" kind="show" id="cu7-4A-Fv8"/>
                                 </connections>
@@ -32,9 +36,12 @@
                             <constraint firstItem="apm-pf-VZ4" firstAttribute="centerY" secondItem="CVJ-mf-BdE" secondAttribute="centerY" id="39Z-rh-I5f"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Start" id="d0U-9O-fBU">
+                    <navigationItem key="navigationItem" title="Start Session" id="d0U-9O-fBU">
                         <barButtonItem key="backBarButtonItem" title="End" id="3Cs-je-ow7"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="startSessionButton" destination="apm-pf-VZ4" id="g7h-rU-BFL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1l-Dd-HWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +66,7 @@
         <!--Program Workout-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Program Workout" id="BYZ-38-t0r" customClass="ViewController" customModule="UnammedApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Program Workout" id="BYZ-38-t0r" customClass="ProgramViewController" customModule="UnammedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +82,7 @@
         <!--Logs-->
         <scene sceneID="23p-xf-3cc">
             <objects>
-                <viewController title="Logs" id="Xpl-Dk-Fdc" sceneMemberID="viewController">
+                <viewController title="Logs" id="Xpl-Dk-Fdc" customClass="LogsViewController" customModule="UnammedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBq-Pm-s1c">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +98,7 @@
         <!--Planning-->
         <scene sceneID="c1N-8n-Mxy">
             <objects>
-                <viewController title="Planning" id="7jJ-DK-gHO" sceneMemberID="viewController">
+                <viewController title="Planning" id="7jJ-DK-gHO" customClass="PlanViewController" customModule="UnammedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GcE-wX-grG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
