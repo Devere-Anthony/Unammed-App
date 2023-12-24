@@ -14,6 +14,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        startSessionButton.setImage(UIImage(named: "play-button"), for: .normal)
+        startSessionButton.setTitle("", for: .normal)
     }
     
     
