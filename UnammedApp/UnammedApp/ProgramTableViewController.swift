@@ -10,28 +10,30 @@ import UIKit
 class ProgramTableViewController: UITableViewController {
     
     // create some dummy Routines so that we can decide if the table is working
-    let dayA = Routine(name: "Day A",
-                       lifts: [
-                        Lift(name: "Low-bar Squat", workingSets: 3, workingReps: 5, targetWeight: 335),
-                        Lift(name: "Overhead Press", workingSets: 3, workingReps: 5, targetWeight: 135),
-                        Lift(name: "Deadlift", workingSets: 1, workingReps: 5, targetWeight: 345)
-                       ])
-    let dayB = Routine(name: "Day B",
-                       lifts: [
-                        Lift(name: "Low-bar Squat", workingSets: 3, workingReps: 5, targetWeight: 335),
-                        Lift(name: "Bench Press", workingSets: 3, workingReps: 5, targetWeight: 225),
-                        Lift(name: "Power-clean", workingSets: 5, workingReps: 3, targetWeight: 135)
-                       ])
-    var routines: [Routine] {
-        // have to use a computed property here because self relies on the routines and the routines rely on self
-        // which creates a circular dependency, just just a computed property that is executed once the object has
-        // be instantiated
-        return [dayA, dayB]
-    }
+//    let dayA = Routine(name: "Day A",
+//                       lifts: [
+//                        Lift(name: "Low-bar Squat", workingSets: 3, workingReps: 5, targetWeight: 335),
+//                        Lift(name: "Overhead Press", workingSets: 3, workingReps: 5, targetWeight: 135),
+//                        Lift(name: "Deadlift", workingSets: 1, workingReps: 5, targetWeight: 345)
+//                       ])
+//    let dayB = Routine(name: "Day B",
+//                       lifts: [
+//                        Lift(name: "Low-bar Squat", workingSets: 3, workingReps: 5, targetWeight: 335),
+//                        Lift(name: "Bench Press", workingSets: 3, workingReps: 5, targetWeight: 225),
+//                        Lift(name: "Power-clean", workingSets: 5, workingReps: 3, targetWeight: 135)
+//                       ])
+//    var routines: [Routine] {
+//        // have to use a computed property here because self relies on the routines and the routines rely on self
+//        // which creates a circular dependency, just just a computed property that is executed once the object has
+//        // be instantiated
+//        return [dayA, dayB]
+//    }
+    var routines: [Routine] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,7 +43,9 @@ class ProgramTableViewController: UITableViewController {
     }
     
     // MARK: - Table view delegate
-    // control the appearance of the view
+    @IBAction func unwindToRoutines(unwindSegue: UIStoryboardSegue)
+    {
+    }
     
     // MARK: - Table view data source
 
@@ -56,9 +60,15 @@ class ProgramTableViewController: UITableViewController {
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Routine", for: indexPath)
-
-        // Configure the cell...
-
+        
+        // update cell properties
+        cell.accessoryType = .disclosureIndicator
+        
+        // configure the cell to display the model object's data
+        let routine = routines[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = routine.name
+        cell.contentConfiguration = content
         return cell
     }
   
