@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCA5A6192B37EF46000D7452 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5A6182B37EF46000D7452 /* ProgramViewController.swift */; };
+		CC305A732B3CC7E6005267BD /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A722B3CC7E6005267BD /* Routine.swift */; };
+		CC305A762B3CC83E005267BD /* Lift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A752B3CC83E005267BD /* Lift.swift */; };
+		CC305A782B3CCB46005267BD /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A772B3CCB46005267BD /* ProgramTableViewController.swift */; };
 		CCA5A61B2B37EF61000D7452 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */; };
 		CCA5A61D2B37EF7F000D7452 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */; };
 		CCDBA89B2B37D6E200453E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBA89A2B37D6E200453E7C /* AppDelegate.swift */; };
@@ -19,7 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CCA5A6182B37EF46000D7452 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		CC305A722B3CC7E6005267BD /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		CC305A752B3CC83E005267BD /* Lift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lift.swift; path = UnammedApp/Lift.swift; sourceTree = SOURCE_ROOT; };
+		CC305A772B3CCB46005267BD /* ProgramTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
 		CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		CCDBA8972B37D6E200453E7C /* UnammedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnammedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC305A712B3CC795005267BD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */,
+				CCDBA89E2B37D6E200453E7C /* StartViewController.swift */,
+				CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */,
+				CC305A772B3CCB46005267BD /* ProgramTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CC305A742B3CC813005267BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC305A722B3CC7E6005267BD /* Routine.swift */,
+				CC305A752B3CC83E005267BD /* Lift.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CCDBA88E2B37D6E200453E7C = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +88,9 @@
 			children = (
 				CCDBA89A2B37D6E200453E7C /* AppDelegate.swift */,
 				CCDBA89C2B37D6E200453E7C /* SceneDelegate.swift */,
-				CCDBA89E2B37D6E200453E7C /* StartViewController.swift */,
 				CCDBA8A02B37D6E200453E7C /* Main.storyboard */,
-				CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */,
-				CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */,
-				CCA5A6182B37EF46000D7452 /* ProgramViewController.swift */,
+				CC305A742B3CC813005267BD /* Models */,
+				CC305A712B3CC795005267BD /* View Controllers */,
 				CCDBA8A32B37D6E300453E7C /* Assets.xcassets */,
 				CCDBA8A52B37D6E300453E7C /* LaunchScreen.storyboard */,
 				CCDBA8A82B37D6E300453E7C /* Info.plist */,
@@ -148,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDBA89F2B37D6E200453E7C /* StartViewController.swift in Sources */,
+				CC305A732B3CC7E6005267BD /* Routine.swift in Sources */,
 				CCA5A61B2B37EF61000D7452 /* PlanViewController.swift in Sources */,
-				CCA5A6192B37EF46000D7452 /* ProgramViewController.swift in Sources */,
+				CC305A762B3CC83E005267BD /* Lift.swift in Sources */,
+				CC305A782B3CCB46005267BD /* ProgramTableViewController.swift in Sources */,
 				CCDBA89B2B37D6E200453E7C /* AppDelegate.swift in Sources */,
 				CCDBA89D2B37D6E200453E7C /* SceneDelegate.swift in Sources */,
 				CCA5A61D2B37EF7F000D7452 /* LogsViewController.swift in Sources */,
