@@ -101,23 +101,39 @@
             </objects>
             <point key="canvasLocation" x="727" y="363"/>
         </scene>
-        <!--New Routine-->
+        <!--Add New Routine-->
         <scene sceneID="aYm-5Z-B13">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZ8-pp-SYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="XPe-Sd-9St" userLabel="Exit" sceneMemberID="exit"/>
-                <tableViewController id="AiC-PK-qVl" sceneMemberID="viewController">
+                <tableViewController id="AiC-PK-qVl" customClass="NewRoutineTableViewController" customModule="UnammedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="QTw-51-fX2">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5dg-p9-cfO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewRoutine" textLabel="GSn-gm-J6T" detailTextLabel="Qnr-e5-2rq" style="IBUITableViewCellStyleValue1" id="5dg-p9-cfO">
                                 <rect key="frame" x="20" y="55.333332061767578" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5dg-p9-cfO" id="VtR-5f-wbH">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GSn-gm-J6T">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qnr-e5-2rq">
+                                            <rect key="frame" x="337.33333333333331" y="15" width="32.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -126,7 +142,7 @@
                             <outlet property="delegate" destination="AiC-PK-qVl" id="PKg-Ua-jzw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Routine" largeTitleDisplayMode="never" id="cyu-7y-aSJ">
+                    <navigationItem key="navigationItem" title="Add New Routine" largeTitleDisplayMode="never" id="cyu-7y-aSJ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Bmb-qd-Eue">
                             <connections>
                                 <segue destination="XPe-Sd-9St" kind="unwind" unwindAction="unwindToRoutinesWithUnwindSegue:" id="Y37-Uz-bwM"/>
