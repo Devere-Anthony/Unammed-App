@@ -10,8 +10,7 @@
 		CC305A732B3CC7E6005267BD /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A722B3CC7E6005267BD /* Routine.swift */; };
 		CC305A762B3CC83E005267BD /* Lift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A752B3CC83E005267BD /* Lift.swift */; };
 		CC305A782B3CCB46005267BD /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A772B3CCB46005267BD /* ProgramTableViewController.swift */; };
-		CC305A7A2B3CE55C005267BD /* NewRoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC305A792B3CE55C005267BD /* NewRoutineTableViewController.swift */; };
-		CCA5A61B2B37EF61000D7452 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */; };
+		CC7C22A62B4114B200A10CB7 /* AddEditRoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C22A52B4114B200A10CB7 /* AddEditRoutineTableViewController.swift */; };
 		CCA5A61D2B37EF7F000D7452 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */; };
 		CCDBA89B2B37D6E200453E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBA89A2B37D6E200453E7C /* AppDelegate.swift */; };
 		CCDBA89D2B37D6E200453E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBA89C2B37D6E200453E7C /* SceneDelegate.swift */; };
@@ -25,8 +24,7 @@
 		CC305A722B3CC7E6005267BD /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		CC305A752B3CC83E005267BD /* Lift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lift.swift; path = UnammedApp/Lift.swift; sourceTree = SOURCE_ROOT; };
 		CC305A772B3CCB46005267BD /* ProgramTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
-		CC305A792B3CE55C005267BD /* NewRoutineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoutineTableViewController.swift; sourceTree = "<group>"; };
-		CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		CC7C22A52B4114B200A10CB7 /* AddEditRoutineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditRoutineTableViewController.swift; sourceTree = "<group>"; };
 		CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		CCDBA8972B37D6E200453E7C /* UnammedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnammedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDBA89A2B37D6E200453E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,11 +50,10 @@
 		CC305A712B3CC795005267BD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC7C22A52B4114B200A10CB7 /* AddEditRoutineTableViewController.swift */,
 				CCA5A61C2B37EF7F000D7452 /* LogsViewController.swift */,
 				CCDBA89E2B37D6E200453E7C /* StartViewController.swift */,
-				CCA5A61A2B37EF61000D7452 /* PlanViewController.swift */,
 				CC305A772B3CCB46005267BD /* ProgramTableViewController.swift */,
-				CC305A792B3CE55C005267BD /* NewRoutineTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -174,12 +171,11 @@
 			files = (
 				CCDBA89F2B37D6E200453E7C /* StartViewController.swift in Sources */,
 				CC305A732B3CC7E6005267BD /* Routine.swift in Sources */,
-				CCA5A61B2B37EF61000D7452 /* PlanViewController.swift in Sources */,
 				CC305A762B3CC83E005267BD /* Lift.swift in Sources */,
-				CC305A7A2B3CE55C005267BD /* NewRoutineTableViewController.swift in Sources */,
 				CC305A782B3CCB46005267BD /* ProgramTableViewController.swift in Sources */,
 				CCDBA89B2B37D6E200453E7C /* AppDelegate.swift in Sources */,
 				CCDBA89D2B37D6E200453E7C /* SceneDelegate.swift in Sources */,
+				CC7C22A62B4114B200A10CB7 /* AddEditRoutineTableViewController.swift in Sources */,
 				CCA5A61D2B37EF7F000D7452 /* LogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

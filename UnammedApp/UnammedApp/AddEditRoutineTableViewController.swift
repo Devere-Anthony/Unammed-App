@@ -1,15 +1,13 @@
 //
-//  NewRoutineTableViewController.swift
+//  AddEditRoutineTableViewController.swift
 //  UnammedApp
 //
-//  Created by Devere Weaver on 12/27/23.
+//  Created by Devere Weaver on 12/30/23.
 //
 
 import UIKit
 
-class NewRoutineTableViewController: UITableViewController {
-    
-    let routine = Routine()    // empty Routine to edit properties
+class AddEditRoutineTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,21 +23,23 @@ class NewRoutineTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewRoutine", for: indexPath)
-//        var content = cell.defaultContentConfiguration()
-//        content.text = "Name"
-//        cell.contentConfiguration = content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
